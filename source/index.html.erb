@@ -1,10 +1,223 @@
----
-title: Welcome to Middleman
----
+<nav class="fixed-nav">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo"><%= image_tag('logo.jpg') %></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#price">》超優獎品</a></li>
+      <li><a href="#validation">》驗證大學幫</a></li>
+      <li><a href="#share">》分享分享碼</a></li>
+      <li><a href="#download">》下載</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="block-section header-bg">
+	<div class="mask"></div>
+	<h2 style="margin-top: 120px;">Colorgy Tasks 分享碼抽獎活動</h2>
+	<h4>有錢一起賺，好禮獎不完</h4>
+	<h4>即日起 ~ 2015/11/10</h4>
+</section>
+<section class="block-section prices-section text-center" id="price">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col m12 s12">
+				<h4>超優獎品</h4>
+			</div>
+			<div class="col m3 s6">
+				<div class="price-item">
+					<div class="price-item-pic">
+						<%= image_tag('iphone6s.jpg', :class=> 'materialboxed')%>
+					</div>
+					<div class="price-item-inner">
+						<h5 class="price-item-name">iPhone 6s</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col m3 s6">
+				<div class="price-item">
+					<div class="price-item-pic">
+						<%= image_tag('ipadmini.jpg', :class=> 'materialboxed') %>
+					</div>
+					<div class="price-item-inner">
+						<h5 class="price-item-name">iPad mini</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col m3 s6">
+				<div class="price-item">
+					<div class="price-item-pic">
+						<%= image_tag('tasty.jpg', :class=> 'materialboxed') %>
+					</div>
+					<div class="price-item-inner">
+						<h5 class="price-item-name">西提牛排</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col m3 s6">
+				<div class="price-item">
+					<div class="price-item-pic">
+						<%= image_tag('shamoni.jpg', :class=> 'materialboxed') %>
+					</div>
+					<div class="price-item-inner">
+						<h5 class="price-item-name">夏慕尼</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col m4 s6">
+				<div class="price-item">
+					<div class="price-item-pic">
+						<%= image_tag('viewshow.jpg', :class=> 'materialboxed') %>
+					</div>
+					<div class="price-item-inner">
+						<h5 class="price-item-name">威秀電影</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col m4 s6">
+				<div class="price-item">
+					<div class="price-item-pic">
+						<%= image_tag('family-mart.jpeg', :class=> 'materialboxed') %>
+					</div>
+					<div class="price-item-inner">
+						<h5 class="price-item-name">全家禮券 150 元</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col m4 s6">
+				<div class="price-item">
+					<div class="price-item-pic">
+						<%= image_tag('family-mart.jpeg', :class=> 'materialboxed') %>
+					</div>
+					<div class="price-item-inner">
+						<h5 class="price-item-name">全家禮券 50 元</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<hr>
+<section class="block-section" id="validation">
+	<h4 style="text-align: center;">如何驗證大學幫？</h4>
+	<div class="download-instruction isotope">
+		<div class="grid-sizer"></div>
+		<div class="step-item isotope-item">
+			<p class="step-item-title text-center"><span class="index-label">1</span>下載「大學幫」app</p>
+			<p class="text-center text-block">請於 app store 或 google play<br>
+			搜尋「大學幫」並下載</p>
+			<div class="step-item-image">
+				<img class="materialboxed" src="<%= image_path('step1.jpg') %>">
+			</div>
+		</div>
+		<div class="step-item isotope-item">
+			<p class="step-item-title text-center"><span class="index-label">2</span>進入 app 登入會員</p>
+			<p class="text-center text-block">請使用 Facebook 註冊並登入</p>
+			<div class="step-item-image">
+				<img class="materialboxed" src="<%= image_path('step2.jpg') %>">
+			</div>
+		</div>
+		<div class="step-item isotope-item">
+			<p class="step-item-title text-center"><span class="index-label">3</span>進入「我的驗證」</p>
+			<p class="text-center text-block">點選左 / 右下角進入 「我的驗證」</p>
+			<div class="step-item-image">
+				<img class="materialboxed" src="<%= image_path('step3.jpg') %>">
+			</div>
+		</div>
+		<div class="step-item isotope-item">
+			<p class="step-item-title text-center"><span class="index-label">4</span>電子郵件帳號驗證</p>
+			<p class="text-center text-block">請使用學校信箱驗證，再至信箱收取驗證信</p>
+			<div class="step-item-image">
+				<img class="materialboxed" src="<%= image_path('step4.jpg') %>">
+			</div>
+		</div>
+		<div class="step-item isotope-item">
+			<p class="step-item-title text-center"><span class="index-label">5</span>AOTP手機身份驗證</p>
+			<p class="text-center text-block">輸入手機號碼進行驗證，輸入驗證碼再發送簡訊。</p>
+			<div class="step-item-image">
+				<img class="materialboxed" src="<%= image_path('step5.jpg') %>">
+			</div>
+		</div>
+		<div class="step-item isotope-item">
+			<p class="step-item-title text-center"><span class="index-label">6</span>驗證完成，開始接/發案</p>
+			<p class="text-center text-block">完成前三項驗證即可開始體驗大學幫的服務了！</p>
+			<div class="step-item-image">
+				<img class="materialboxed" src="<%= image_path('step6.jpg') %>">
+			</div>
+		</div>
+	</div>
+</section>
+<hr>
+<section class="block-section" id="share">
+	<h4 style="text-align: center;">如何分享分享碼？</h4>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col m3 s6">
+				<div class="share-item">
+					<p class="share-item-title text-center"><span class="index-label">1</span>點選上方設定，再點選分享。</p>
+					<div class="share-item-image">
+						<img class="materialboxed" src="<%= image_path('share1.png') %>">
+					</div>
+				</div>
+			</div>
+			<div class="col m3 s6">
+				<div class="share-item">
+					<p class="share-item-title text-center"><span class="index-label">2</span>擇一方式將自己的獎勵序號分享給好友。</p>
+					<div class="share-item-image">
+						<img class="materialboxed" src="<%= image_path('share2.png') %>">
+					</div>
+				</div>
+			</div>
+			<div class="col m3 s6">
+				<div class="share-item">
+					<p class="share-item-title text-center"><span class="index-label">3</span>好友下載app成為驗證會員後，<br>點選活動序號。</p>
+					<div class="share-item-image">
+						<img class="materialboxed" src="<%= image_path('share3.png') %>">
+					</div>
+				</div>
+			</div>
+			<div class="col m3 s6">
+				<div class="share-item">
+					<p class="share-item-title text-center"><span class="index-label">4</span>請好友輸入你的獎勵序號，可回步驟二點選「我推薦的好友」，便可知道你分享的成果，最後也會是以這裡出現的朋友做為獎品依據。</p>
+					<div class="share-item-image">
+						<img class="materialboxed" src="<%= image_path('share4.png') %>">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="block-section" style="background-color: #FF0068" id="download">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col m4 s12">
+				<h4 class="text-center" style="color: #FFF; margin-bottom: 40px;">立即下載</h4>
+				<a href="" class="download-btn"><%= image_tag('https://d3crm0v5qpok2x.cloudfront.net/assets/img/ios-icon.png') %></a>
+				<a href="" class="download-btn" style="margin-bottom: 40px;"><%= image_tag('https://d3crm0v5qpok2x.cloudfront.net/assets/img/google-icon.png') %></a>
+			</div>
+			<div class="col m4 s12" style="text-align: center;">
+				<div class="fb-page" data-href="https://www.facebook.com/Colorgy-1529686803975150/timeline/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"></div>
+			</div>
+		</div>
+	</div>
+</section>
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+
+<script type="text/javascript">
+	$( document ).ready(function(){
+		$(".button-collapse").sideNav();
+	})
+  $( function() {
+    // init Isotope
+    var $container = $('.isotope').imagesLoaded(function(){
+      $container.isotope({
+        itemSelector: '.isotope-item',
+        columnWidth: '.grid-sizer',
+      });
+    });
+  })
+</script>
