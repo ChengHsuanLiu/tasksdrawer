@@ -10441,3 +10441,45 @@ body {
   /* line 120, /Users/Lucas/Project/TasksDrawer/source/stylesheets/application.scss */
   .isotope-item {
     width: 48%; } }
+/* line 124, /Users/Lucas/Project/TasksDrawer/source/stylesheets/application.scss */
+.rules {
+  margin: 24px auto;
+  max-width: 600px; }
+
+/* line 128, /Users/Lucas/Project/TasksDrawer/source/stylesheets/application.scss */
+.primary-bg {
+  background-color: #FF0068; }
+
+/* line 131, /Users/Lucas/Project/TasksDrawer/source/stylesheets/application.scss */
+.gray-bg {
+  background-color: #ECECEC; }
+
+/* line 134, /Users/Lucas/Project/TasksDrawer/source/stylesheets/application.scss */
+.text-color--white {
+  color: #FFF; }
+
+/* line 137, /Users/Lucas/Project/TasksDrawer/source/stylesheets/application.scss */
+.text-color--black {
+  color: #444; }
+
+/* line 140, /Users/Lucas/Project/TasksDrawer/source/stylesheets/application.scss */
+.title-icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px; }
+
+/* line 147, /Users/Lucas/Project/TasksDrawer/source/stylesheets/application.scss */
+p {
+  letter-spacing: 1px; }
+
+/* line 151, /Users/Lucas/Project/TasksDrawer/source/stylesheets/application.scss */
+.skew-mask {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: -35%;
+  top: 0;
+  background-color: rgba(255, 0, 104, 0.5);
+  transform: skew(30deg); }
